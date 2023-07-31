@@ -8,7 +8,7 @@ $.ajax({
         image_url = board.loaded_file === null ? image_url : board.loaded_file;
         
         $('#boards-container').append(`
-        <div class="board">
+            <div class="board">
                 <img src="${image_url}">
                 <p>
                     <a href="/board/${board.no}"><h4>${board.title}</h4></a>

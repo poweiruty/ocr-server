@@ -10,6 +10,7 @@ class OCR(APIView) :
     def get(self, request, pk) :
         board = Board.objects.get(pk=pk)
         serializer = BoardSerializer(board)
+        #filename = "eurotext.png"
         #filename = serializer.data.get('loaded_file')
         #filepath = f"media/{filename}"
         filepath = serializer.data.get('loaded_file')

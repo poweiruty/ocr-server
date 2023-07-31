@@ -14,13 +14,25 @@
     margin: 10px;
 }
 
+section{
+    padding: 20px;
+    margin: 0 auto;    
+}
+
+#boards-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
 h4 {
     margin-top: 5px;
 }
 
 img {
     width: 80%;
-    padding: auto;
+    height: 200px;
 }
 
 a {
